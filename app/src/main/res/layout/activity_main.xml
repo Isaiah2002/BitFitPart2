@@ -82,4 +82,32 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="@+id/btnSet"/>
 
+
+
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf= "@+id/bottomNavigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_cpnstraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <com.google.android.material.bottomnavigation.BotttomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_navigation"
+        tools:ignore="MissingClass"
+        android:backgtround="@color/mystic"
+        app:itemTextColor="@color/lilac"
+        app:itemIconTint="@color/lilac" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
